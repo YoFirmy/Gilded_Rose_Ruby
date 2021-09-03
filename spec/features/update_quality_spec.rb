@@ -22,15 +22,10 @@ describe '#update_quality' do
       expect(@item.quality).to eq(4)
     end
 
-    context 'item is Aged Brie' do
-      before(:each) do
-        @item = Item.new('Aged Brie', 5, 5)
-        GildedRose.new([@item]).update_quality
-      end
-
-      it 'increases the quality' do
-        expect(@item.quality).to eq(6)
-      end
+    it 'increases the quality of Aged Brie' do
+      @item = Item.new('Aged Brie', 5, 5)
+      GildedRose.new([@item]).update_quality
+      expect(@item.quality).to eq(6)
     end
   end
 
@@ -44,27 +39,17 @@ describe '#update_quality' do
       expect(@item.quality).to eq(3)
     end
 
-    context 'item is Aged Brie' do
-      before(:each) do
-        @item = Item.new('Aged Brie', -1, 5)
-        GildedRose.new([@item]).update_quality
-      end
-
-      it 'increases the quality by 2' do
-        expect(@item.quality).to eq(7)
-      end
+    it 'increases the quality by 2 of Aged Brie' do
+      @item = Item.new('Aged Brie', -1, 5)
+      GildedRose.new([@item]).update_quality
+      expect(@item.quality).to eq(7)
     end
   end
 
-  context 'quality has reached 0' do
-    before(:each) do
-      @item = Item.new('foo', 5, 0)
-      GildedRose.new([@item]).update_quality
-    end
-
-    it 'does not reduce the quality' do
-      expect(@item.quality).to eq(0)
-    end
+  it 'does not reduce the quality once quality has reached 0' do
+    @item = Item.new('foo', 5, 0)
+    GildedRose.new([@item]).update_quality
+    expect(@item.quality).to eq(0)
   end
 
   it 'does not increase the quality once quality has reached 50' do

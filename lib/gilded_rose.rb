@@ -42,13 +42,13 @@ class GildedRose
 
   def edit_quality(item)
     if brie_or_tickets?(item)
-      backstage_passes?(item) ? increase_tickets(item) : increase_quality(item)
+      backstage_passes?(item) ? increase_tickets_quality(item) : increase_quality(item)
     else
       decrease_quality(item)
     end
   end
 
-  def increase_tickets(item)
+  def increase_tickets_quality(item)
     increase_quality(item)
     increase_quality(item) if item.sell_in < 11
     increase_quality(item) if item.sell_in < 6
