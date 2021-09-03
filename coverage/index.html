@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2021-09-03T12:16:36+01:00">2021-09-03T12:16:36+01:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2021-09-03T12:56:26+01:00">2021-09-03T12:56:26+01:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -30,7 +30,7 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         3.81
+         4.08
        </span>
     </span> hits/line
     )
@@ -43,8 +43,8 @@
   </div>
 
   <div class="t-line-summary">
-    <b>178</b> relevant lines,
-    <span class="green"><b>178</b> lines covered</span> and
+    <b>182</b> relevant lines,
+    <span class="green"><b>182</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed. </span>
     (<span class="green">
   100.0%
@@ -73,11 +73,11 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#58933f60c81a97a06413f7510ce8081508aa7bdf" class="src_link" title="lib/gilded_rose.rb">lib/gilded_rose.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">58</td>
-            <td class="cell--number">31</td>
-            <td class="cell--number">31</td>
+            <td class="cell--number">68</td>
+            <td class="cell--number">35</td>
+            <td class="cell--number">35</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">14.35</td>
+            <td class="cell--number">14.54</td>
             
           </tr>
         
@@ -156,8 +156,8 @@
     
 
     <div class="t-line-summary">
-      <b>31</b> relevant lines.
-      <span class="green"><b>31</b> lines covered</span> and
+      <b>35</b> relevant lines.
+      <span class="green"><b>35</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -285,210 +285,34 @@
 
             
 
-            <code class="ruby">      if brie_or_tickets?(item)</code>
+            <code class="ruby">      edit_quality(item)</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="14" data-linenumber="12">
-            <span class="hits">14</span>
-            
-
-            
-
-            <code class="ruby">        increase_quality(item)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="14" data-linenumber="13">
-            <span class="hits">14</span>
-            
-
-            
-
-            <code class="ruby">        if backstage_passes?(item)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="8" data-linenumber="14">
-            <span class="hits">8</span>
-            
-
-            
-
-            <code class="ruby">          increase_quality(item) if item.sell_in &lt; 11</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="8" data-linenumber="15">
-            <span class="hits">8</span>
-            
-
-            
-
-            <code class="ruby">          increase_quality(item) if item.sell_in &lt; 6</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="16">
-            
-            
-
-            
-
-            <code class="ruby">        end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="17">
-            
-            
-
-            
-
-            <code class="ruby">      else</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="16" data-linenumber="18">
-            <span class="hits">16</span>
-            
-
-            
-
-            <code class="ruby">        decrease_quality(item)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="19">
-            
-            
-
-            
-
-            <code class="ruby">      end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="30" data-linenumber="20">
+          <li class="covered" data-hits="30" data-linenumber="12">
             <span class="hits">30</span>
             
 
             
 
-            <code class="ruby">      item.sell_in -= 1 unless sulfuras?(item)</code>
+            <code class="ruby">      edit_sell_in(item)</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="30" data-linenumber="21">
+          <li class="covered" data-hits="30" data-linenumber="13">
             <span class="hits">30</span>
             
 
             
 
-            <code class="ruby">      if item.sell_in.negative?</code>
+            <code class="ruby">      edit_quality_when_sell_in_negative(item) if item.sell_in.negative?</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="8" data-linenumber="22">
-            <span class="hits">8</span>
-            
-
-            
-
-            <code class="ruby">        if aged_brie?(item)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="3" data-linenumber="23">
-            <span class="hits">3</span>
-            
-
-            
-
-            <code class="ruby">          increase_quality(item)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="5" data-linenumber="24">
-            <span class="hits">5</span>
-            
-
-            
-
-            <code class="ruby">        elsif backstage_passes?(item)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="2" data-linenumber="25">
-            <span class="hits">2</span>
-            
-
-            
-
-            <code class="ruby">          item.quality = 0</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="26">
-            
-            
-
-            
-
-            <code class="ruby">        else</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="3" data-linenumber="27">
-            <span class="hits">3</span>
-            
-
-            
-
-            <code class="ruby">          decrease_quality(item)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="28">
-            
-            
-
-            
-
-            <code class="ruby">        end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="29">
-            
-            
-
-            
-
-            <code class="ruby">      end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="30">
+          <li class="never" data-hits="" data-linenumber="14">
             
             
 
@@ -499,7 +323,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="31">
+          <li class="never" data-hits="" data-linenumber="15">
             
             
 
@@ -510,7 +334,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="32">
+          <li class="never" data-hits="" data-linenumber="16">
             
             
 
@@ -521,13 +345,189 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="33">
+          <li class="covered" data-hits="1" data-linenumber="17">
             <span class="hits">1</span>
             
 
             
 
             <code class="ruby">  private</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="18">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="19">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def backstage_passes?(item)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="43" data-linenumber="20">
+            <span class="hits">43</span>
+            
+
+            
+
+            <code class="ruby">    item.name == &#39;Backstage passes to a TAFKAL80ETC concert&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="21">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="22">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="23">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def aged_brie?(item)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="43" data-linenumber="24">
+            <span class="hits">43</span>
+            
+
+            
+
+            <code class="ruby">    item.name == &#39;Aged Brie&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="25">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="26">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="27">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def sulfuras?(item)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="47" data-linenumber="28">
+            <span class="hits">47</span>
+            
+
+            
+
+            <code class="ruby">    item.name == &#39;Sulfuras, Hand of Ragnaros&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="29">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="30">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="31">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def increase_quality(item)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="27" data-linenumber="32">
+            <span class="hits">27</span>
+            
+
+            
+
+            <code class="ruby">    item.quality += 1 if item.quality &lt; 50</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="33">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
           </li>
         </div>
       
@@ -549,18 +549,18 @@
 
             
 
-            <code class="ruby">  def backstage_passes?(item)</code>
+            <code class="ruby">  def decrease_quality(item)</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="43" data-linenumber="36">
-            <span class="hits">43</span>
+          <li class="covered" data-hits="19" data-linenumber="36">
+            <span class="hits">19</span>
             
 
             
 
-            <code class="ruby">    item.name == &#39;Backstage passes to a TAFKAL80ETC concert&#39;</code>
+            <code class="ruby">    item.quality -= 1 if item.quality.positive? &amp;&amp; !sulfuras?(item)</code>
           </li>
         </div>
       
@@ -593,7 +593,7 @@
 
             
 
-            <code class="ruby">  def aged_brie?(item)</code>
+            <code class="ruby">  def brie_or_tickets?(item)</code>
           </li>
         </div>
       
@@ -604,7 +604,7 @@
 
             
 
-            <code class="ruby">    item.name == &#39;Aged Brie&#39;</code>
+            <code class="ruby">    aged_brie?(item) || backstage_passes?(item)</code>
           </li>
         </div>
       
@@ -637,29 +637,29 @@
 
             
 
-            <code class="ruby">  def sulfuras?(item)</code>
+            <code class="ruby">  def edit_quality(item)</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="47" data-linenumber="44">
-            <span class="hits">47</span>
+          <li class="covered" data-hits="30" data-linenumber="44">
+            <span class="hits">30</span>
             
 
             
 
-            <code class="ruby">    item.name == &#39;Sulfuras, Hand of Ragnaros&#39;</code>
+            <code class="ruby">    if brie_or_tickets?(item)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="45">
-            
-            
-
+          <li class="covered" data-hits="14" data-linenumber="45">
+            <span class="hits">14</span>
             
 
-            <code class="ruby">  end</code>
+            
+
+            <code class="ruby">      backstage_passes?(item) ? increase_tickets(item) : increase_quality(item)</code>
           </li>
         </div>
       
@@ -670,29 +670,29 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">    else</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="47">
-            <span class="hits">1</span>
+          <li class="covered" data-hits="16" data-linenumber="47">
+            <span class="hits">16</span>
             
 
             
 
-            <code class="ruby">  def increase_quality(item)</code>
+            <code class="ruby">      decrease_quality(item)</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="27" data-linenumber="48">
-            <span class="hits">27</span>
+          <li class="never" data-hits="" data-linenumber="48">
+            
             
 
             
 
-            <code class="ruby">    item.quality += 1 if item.quality &lt; 50</code>
+            <code class="ruby">    end</code>
           </li>
         </div>
       
@@ -725,23 +725,45 @@
 
             
 
-            <code class="ruby">  def decrease_quality(item)</code>
+            <code class="ruby">  def increase_tickets(item)</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="19" data-linenumber="52">
-            <span class="hits">19</span>
+          <li class="covered" data-hits="8" data-linenumber="52">
+            <span class="hits">8</span>
             
 
             
 
-            <code class="ruby">    item.quality -= 1 if item.quality.positive? &amp;&amp; !sulfuras?(item)</code>
+            <code class="ruby">    increase_quality(item)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="53">
+          <li class="covered" data-hits="8" data-linenumber="53">
+            <span class="hits">8</span>
+            
+
+            
+
+            <code class="ruby">    increase_quality(item) if item.sell_in &lt; 11</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="8" data-linenumber="54">
+            <span class="hits">8</span>
+            
+
+            
+
+            <code class="ruby">    increase_quality(item) if item.sell_in &lt; 6</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="55">
             
             
 
@@ -752,7 +774,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="54">
+          <li class="never" data-hits="" data-linenumber="56">
             
             
 
@@ -763,29 +785,29 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="55">
+          <li class="covered" data-hits="1" data-linenumber="57">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">  def brie_or_tickets?(item)</code>
+            <code class="ruby">  def edit_quality_when_sell_in_negative(item)</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="30" data-linenumber="56">
-            <span class="hits">30</span>
+          <li class="covered" data-hits="8" data-linenumber="58">
+            <span class="hits">8</span>
             
 
             
 
-            <code class="ruby">    aged_brie?(item) || backstage_passes?(item)</code>
+            <code class="ruby">    brie_or_tickets?(item) ? edit_negative_brie_or_tickets(item) : decrease_quality(item)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="57">
+          <li class="never" data-hits="" data-linenumber="59">
             
             
 
@@ -796,7 +818,95 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="58">
+          <li class="never" data-hits="" data-linenumber="60">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="61">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def edit_negative_brie_or_tickets(item)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="5" data-linenumber="62">
+            <span class="hits">5</span>
+            
+
+            
+
+            <code class="ruby">    aged_brie?(item) ? increase_quality(item) : item.quality = 0</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="63">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="64">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="65">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def edit_sell_in(item)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="30" data-linenumber="66">
+            <span class="hits">30</span>
+            
+
+            
+
+            <code class="ruby">    item.sell_in -= 1 unless sulfuras?(item)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="67">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="68">
             
             
 
