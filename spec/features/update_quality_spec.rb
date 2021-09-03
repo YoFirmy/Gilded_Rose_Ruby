@@ -4,7 +4,7 @@ require 'gilded_rose'
 require 'item'
 
 describe '#update_quality' do
-  context 'sellIn is more than 0' do
+  context 'sellIn is more than 0 but less than 50' do
     before(:each) do
       @item = Item.new('foo', 5, 5)
       GildedRose.new([@item]).update_quality
@@ -27,6 +27,12 @@ describe '#update_quality' do
       GildedRose.new([@item]).update_quality
       expect(@item.quality).to eq(6)
     end
+
+    it 'reduces the quality double if it is a Conjured Item' do
+      @item = Item.new('Conjured Mana Cake', 10, 10)
+      GildedRose.new([@item]).update_quality
+      expect(@item.quality).to eq(8)
+    end
   end
 
   context 'sellIn is less than 0' do
@@ -44,6 +50,12 @@ describe '#update_quality' do
       GildedRose.new([@item]).update_quality
       expect(@item.quality).to eq(7)
     end
+
+    it 'reduces the quality double if it is a Conjured Item' do
+      @item = Item.new('Conjured Mana Cake', -0, 10)
+      GildedRose.new([@item]).update_quality
+      expect(@item.quality).to eq(6)
+    end
   end
 
   it 'does not reduce the quality once quality has reached 0' do
@@ -52,7 +64,7 @@ describe '#update_quality' do
     expect(@item.quality).to eq(0)
   end
 
-  it 'does not increase the quality once quality has reached 50' do
+  it 'does not increase the quality of Aged Brie once quality has reached 50' do
     @item = Item.new('Aged Brie', -1, 50)
     GildedRose.new([@item]).update_quality
     expect(@item.quality).to eq(50)

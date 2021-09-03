@@ -93,5 +93,19 @@ describe GildedRose do
       expect(item).to receive(:quality=).with(0)
       subject.update_quality
     end
+
+    it 'decreases the quality of conjured items by 2' do
+      allow(item).to receive(:name).and_return('Conjured Mana Cake')
+      allow(item).to receive(:sell_in).and_return(5)
+      expect(item).to receive(:quality=).with(4).twice
+      subject.update_quality
+    end
+
+    it 'decreases the quality of conjured items by 4 if sellIn is less than 0' do
+      allow(item).to receive(:name).and_return('Conjured Mana Cake')
+      allow(item).to receive(:sell_in).and_return(-1)
+      expect(item).to receive(:quality=).with(4).exactly(4).times
+      subject.update_quality
+    end
   end
 end

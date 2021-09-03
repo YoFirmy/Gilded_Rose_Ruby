@@ -28,12 +28,17 @@ class GildedRose
     item.name == 'Sulfuras, Hand of Ragnaros'
   end
 
+  def conjured?(item)
+    item.name == 'Conjured Mana Cake'
+  end
+
   def increase_quality(item)
     item.quality += 1 if item.quality < 50
   end
 
   def decrease_quality(item)
     item.quality -= 1 if item.quality.positive? && !sulfuras?(item)
+    item.quality -= 1 if item.quality.positive? && conjured?(item)
   end
 
   def brie_or_tickets?(item)
