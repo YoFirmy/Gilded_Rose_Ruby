@@ -2,3 +2,8 @@ AllCops:
   NewCops: enable
   Exclude:
     - lib/item.rb
+
+Metrics/BlockLength:
+  Exclude:
+    - spec/gilded_rose_spec.rb
+    - spec/features/update_quality_spec.rb

@@ -4,7 +4,7 @@ require 'gilded_rose'
 
 describe GildedRose do
   let(:item) { double :item, name: 'foo', quality: 5, sell_in: 5, :sell_in= => 4, :quality= => 4 }
-  subject { described_class.new([item])}
+  subject { described_class.new([item]) }
 
   describe '#update_quality' do
     it 'does not change the name' do

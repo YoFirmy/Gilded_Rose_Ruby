@@ -27,7 +27,7 @@ describe '#update_quality' do
         @item = Item.new('Aged Brie', 5, 5)
         GildedRose.new([@item]).update_quality
       end
-  
+
       it 'increases the quality' do
         expect(@item.quality).to eq(6)
       end
@@ -49,7 +49,7 @@ describe '#update_quality' do
         @item = Item.new('Aged Brie', -1, 5)
         GildedRose.new([@item]).update_quality
       end
-  
+
       it 'increases the quality by 2' do
         expect(@item.quality).to eq(7)
       end
