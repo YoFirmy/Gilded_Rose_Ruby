@@ -38,3 +38,6 @@ ruby texttest_fixture.rb 5
 If you would like to add new items then you have to edit the file before running it, or Create your own, with your own list of items!
 
 ## Examples
+
+![texttest example](images/texttest.png)
+![texttest example for 7 days](images/texttest_7_days.png)
